@@ -1,0 +1,19 @@
+# Build output
+x64/
+*.exe
+*.pdb
+*.obj
+*.recipe
+*.log
+*.binlog
+*.ilk
+*.tlog
+
+# Setup artifacts
+REVENGE_CS_Setup_*.exe
+
+# Config (generated at runtime)
+revengecs.cfg
+
+# ImGui window state
+imgui.ini

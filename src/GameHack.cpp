@@ -328,8 +328,8 @@ void HackGame() {
 			{
 				float moveX = bestTargetScreenPos.x - centerX;
 				float moveY = bestTargetScreenPos.y - centerY;
-				moveX /= kAimSmoothness;
-				moveY /= kAimSmoothness;
+				moveX /= g_AimSmoothness;
+				moveY /= g_AimSmoothness;
 
 				const float kMax = 250.0f;
 				if (moveX > kMax) moveX = kMax;

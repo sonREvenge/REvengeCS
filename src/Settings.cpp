@@ -17,6 +17,8 @@ bool g_ESPSnap = false;
 bool g_ESPFovCircle = true;
 bool g_ESPTeamCheck = true;
 
+float g_AimSmoothness = 5.0f;
+
 int g_AimbotHotkey = 0;
 int g_VisualsHotkey = 0;
 
@@ -37,6 +39,7 @@ void SaveSettings() {
 	f << "esp_snap " << g_ESPSnap << "\n";
 	f << "esp_fov " << g_ESPFovCircle << "\n";
 	f << "esp_team " << g_ESPTeamCheck << "\n";
+	f << "aim_smooth " << g_AimSmoothness << "\n";
 	f << "aimbot_hotkey " << g_AimbotHotkey << "\n";
 	f << "visuals_hotkey " << g_VisualsHotkey << "\n";
 }
@@ -57,6 +60,7 @@ void LoadSettings() {
 		else if (key == "esp_snap")        f >> g_ESPSnap;
 		else if (key == "esp_fov")         f >> g_ESPFovCircle;
 		else if (key == "esp_team")        f >> g_ESPTeamCheck;
+		else if (key == "aim_smooth")       f >> g_AimSmoothness;
 		else if (key == "aimbot_hotkey")   f >> g_AimbotHotkey;
 		else if (key == "visuals_hotkey")  f >> g_VisualsHotkey;
 		else { std::string skip; std::getline(f, skip); }

@@ -95,7 +95,11 @@ static void BuildAimbotPage() {
 	ImGui::Combo("Target", &g_AimBone, kBones, IM_ARRAYSIZE(kBones));
 
 	ImGui::SetNextItemWidth(160);
-	ImGui::SliderFloat("FOV", &g_AimFovPx, 20.0f, 600.0f, "%.0f px");
+		ImGui::SliderFloat("FOV", &g_AimFovPx, 20.0f, 600.0f, "%.0f px");
+
+		ImGui::Dummy(ImVec2(0, 6));
+		ImGui::SetNextItemWidth(160);
+		ImGui::SliderFloat("Smoothness", &g_AimSmoothness, 1.0f, 30.0f, "%.1f (1 = snap)");
 }
 
 static void BuildEspPage() {
