@@ -1,6 +1,6 @@
 #define MyAppId      "{{8D2F4A1E-6B7C-4F90-9A3D-2E5B8C1F4567}"
 #define MyAppName    "REVENGE CS"
-#define MyAppVersion "1.4.0"
+#define MyAppVersion "1.4.1"
 #define MyAppExeName "REvengeCS.exe"
 
 [Setup]
